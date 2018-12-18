@@ -305,3 +305,6 @@ def permission_denied_view(request, exception, template_name='blog/error_page.ht
 
 def zxw_index(request):
     return HttpResponse('zxw主页')
+
+def test(request):
+    return HttpResponse('zxw主页')
