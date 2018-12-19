@@ -304,7 +304,13 @@ def permission_denied_view(request, exception, template_name='blog/error_page.ht
 
 
 def zxw_index(request):
-    return HttpResponse(u'哈哈哈，看见了吧，媳妇～么么，小宝贝～')
+    # return HttpResponse(u'哈哈哈，看见了吧，媳妇～么么，小宝贝～')
+    return HttpResponse(u'zxw主页')
 
 def test(request):
-    return HttpResponse('zxw主页')
+    return HttpResponse(u'zxw主页测试')
+
+def xbb_love(request):
+    return HttpResponse(u'宝贝，稳住心态~谁都有第一步，你已经做的很好了~你不开心，我就哭~')
+    # return HttpResponse('xbb_love')
+    # return render(request, 'zxw_self/index.html')

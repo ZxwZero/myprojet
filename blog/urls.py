@@ -25,8 +25,9 @@ from haystack.views import SearchView
 app_name = "blog"
 urlpatterns = [
     # url(r'', views.IndexView.as_view(), name='index'),
-    url(r'', views.zxw_index, name='index'),
-    url(r'test', views.test, name='test'),
+    url(r'^$', views.zxw_index, name='index'),
+    url(r'^test$', views.test, name='test'),
+    url(r'^xbb_love$', views.xbb_love, name='xbb_love'),
     url(r'page/<int:page>/', views.IndexView.as_view(), name='index_page'),
 
     url(r'article/<int:year>/<int:month>/<int:day>/<int:article_id>.html',
